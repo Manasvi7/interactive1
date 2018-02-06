@@ -1,6 +1,6 @@
 p{
-	margin-left: 97px;
-	margin-right:3000px;
+	margin-left: 0px;
+	margin-right:0px;
 }
 	
 #questions {
@@ -10,6 +10,7 @@ p{
 	margin-top:5000px;
 	margin-right:2000px; 
 }
+
 #move1{
 	margin-right: 400px;
 }
@@ -24,4 +25,13 @@ p{
 
 #four {
 	margin-right:0px;
+}
+
+#bottom{
+	margin-bottom: 500px;
+
+}
+
+#vertical{
+	transform: rotate(90deg);
 }

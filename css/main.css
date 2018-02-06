@@ -10,4 +10,34 @@ body {
 } 
 a{
 	color:darkslategray;
+} 
+
+.name{
+	float:right;
+	width:350px;
 }
+
+
+.desc {
+	top: 50px;
+	bottom: 50px;
+	padding-left: 10px;
+	float:right;
+	clear:right;
+	width:300px;
+	
+}
+
+#exercises {
+	position:relative;
+	float: left;
+	width:170px;
+}
+
+#projects{
+	float: left;
+	clear: left;
+	width:170px;
+}
+
+
