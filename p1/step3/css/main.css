@@ -1,6 +1,7 @@
 p{
 	margin-left: 0px;
 	margin-right:0px;
+	background-color: black
 }
 	
 #questions {
@@ -36,4 +37,14 @@ p{
 	transform: rotate(90deg);
 }
 
+#background{
+	background-color: orange;
+}
 
+#yes{
+	background-color: black;
+}
+
+#five{
+	background-color: blue;
+}

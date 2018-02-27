@@ -8,11 +8,11 @@ body{
 	background-color: black;
 	margin-top: 0px
 	margin-right:0px;
-	text-shadow: 4px 4px 10px yellow;
 	-webkit-animation: flash linear 30s infinite;
 	animation: flash linear 30s infinite;
 
 }
+
 @-webkit-keyframes flash {
 	0% { opacity: 1; } 
 	50% { opacity: .1; } 
