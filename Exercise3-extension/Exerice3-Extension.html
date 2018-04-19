@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Clock Piece - Extension</title>
+
+  <meta charset="utf-8" />  
+  
+  <!-- loading css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+  <!-- loading JS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  </style>
+</head>
+<body>
+
+	<!-- show by default -->
+<div id="grid">
+	<div class="item1"><svg width="2000" height="700">
+     <rect width="1000" height="500" style="fill:rgb(225,225,0);" /></svg></div>
+
+    <div class="item2"><svg width="2000" height="700">
+     <rect width="700" height="1000" style="fill: rgb(179,177,177);" /></svg></div>
+
+     <div class="item3"><svg width="2000" height="700">
+     <rect width="200" height="1000" style="fill:rgb(255,128,0);" /></svg></div>
+    
+</div>
+
+<p id="print">
+		<script>
+
+	var currentTime = new Date(),
+      hours = currentTime.getHours(),
+      minutes = currentTime.getMinutes();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	var suffix = "AM";
+	if (hours >= 12) {
+    suffix = "PM";
+    hours = hours - 12;
+	}
+	if (hours == 0) {
+	 hours = 12;
+	}
+
+	document.write(hours + ":" + minutes + " " + suffix)
+
+</script>
+
+    </p>
+
+<!-- <div id="tablet">
+	<img src="assets/clock.jpg">
+</div>
+ -->
+	
+	<!-- show on print
+	<!-- <div id="print">
+		This is for print.
+	</div>	 -->
+
+	
+
+<!-- <script>
+document.getElementById("print").innerHTML = Date();
+</script> -->
+
+</body>
+</html>
