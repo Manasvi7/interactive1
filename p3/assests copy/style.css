@@ -11,8 +11,6 @@
 .message {
 	color: blue;
 	position: fixed;
-	font-size: 12px;
-	font-style: courier;
 }
 
 .special-message {
