@@ -11,8 +11,9 @@
 .message {
 	color: blue;
 	position: fixed;
-	font-size: 12px;
+	font-size: 15px;
 	font-style: courier;
+	opacity: 1
 }
 
 .special-message {
@@ -25,3 +26,61 @@
 	position: absolute;
 	left: 25%;
 }
+
+#print{
+	opacity: 0 ;
+}
+
+ #time {
+ 	display: none;
+ 	height: 1000px;
+ 	width: 400px;
+ 	font-size: 201px;
+ 	opacity: 0;
+ }
+
+
+@media print{
+
+
+header, article div:nth-child(3), article div:nth-child(9), article div:nth-child(11), ._5rnaq, ._68u16_gft4l, ._11dqz, article div:nth-child(3) { opacity: 0; }
+
+article div:nth-child(2) {
+	opacity: 1;
+}
+
+/*article div:nth-child(2) nth-type(1) {
+	page-break-after: always;
+}
+*/
+
+article div:nth-child(2) {
+	page-break-after: always;
+}
+
+.message{
+	opacity: 0;
+}
+
+/*.special-message{
+	opacity: 1;
+}
+*/
+#time{
+	page-break-after: always;
+	display: block;
+	opacity: 1;
+	font-size: 50px;
+	line-height: 250px;
+	font-family: 'helvetica', sans-serif;
+
+	width: 100vw; 
+	height: 100vh;
+	top: 40%;
+	left:20px;
+	text-align: center;
+
+	z-index: 10000000;
+
+}
+

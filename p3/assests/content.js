@@ -74,27 +74,63 @@ if (window.location.href.indexOf("instagram") > -1) {
 
 		}
 
-		if (n%10 == 13) {
-			$('body').append('<div class="special-message"> Keep lurking, I am doing good. </div>');			
-		}
+		// if (n%10 == 13) {
+		// 	$('body').append('<div class="special-message"> Keep lurking, I am doing good. </div>');			
+		// }
 		
-		if (n == 14) {
+		if (n == 13) {
 			n = 1;
 		}
 
 		n++;
 
-	},10000);
+	},15000);
     
 }
 
-$('div').click(function() {
-	$(this).addClass('gradient');
-});
+// $('div').click(function() {
+// 	$(this).addClass('gradient');
+// });
 
 $('.coreSpriteDesktopNavLogoAndWordmark, .coreSpriteDesktopNavProfile, .coreSpriteDirectHeart, .coreSpriteDismissLarge, .coreSpriteDismissSmall').css('background-image', 'url("https://manasvi7.github.io/interactive1/p3/Asset1.png")');
 
 //.src = "p3/asset 1.png";
+
+
+
+$('body').prepend('<div id="time"></div>');
+
+var x = 1;
+
+setInterval(function(){
+	x++;
+
+	$('#time').html(x + ' minutes have passed');
+
+},60000);
+
+
+
+// var startTime = new Date().getTime();
+
+// setTimeout(myCallback, 200);
+
+// function myCallback(event) {
+
+//   var endTime = new Date().getTime();
+//   var timeSpent = endTime - startTime;
+
+//   console.log(timeSpent + ' time has elapsed');
+
+//   //_gaq.push(['_trackTiming', 'Test', 'callback_timeout', timeSpent, 'animation']);
+// }
+
+
+// $('img').load(function(){
+// 	$(this).addClass('Print')
+// }
+
+
 
 
 
